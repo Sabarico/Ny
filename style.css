@@ -1,0 +1,181 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f3f3f3;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+}
+
+.portfolio{
+    width:900px;
+    height:1200px;
+    background:#efefef;
+    display:flex;
+}
+
+
+.left-section{
+    width:32%;
+    padding:50px 30px;
+    position:relative;
+}
+
+.left-section h1{
+    font-size:68px;
+    line-height:0.95;
+    font-weight:500;
+    margin-bottom:40px;
+}
+
+.intro{
+    font-size:15px;
+    line-height:1.8;
+    color:#555;
+    margin-bottom:25px;
+}
+
+.vertical-text{
+    position:absolute;
+    bottom:120px;
+    left:40px;
+    writing-mode:vertical-rl;
+    transform:rotate(180deg);
+    font-size:38px;
+    letter-spacing:2px;
+    color:#222;
+}
+
+
+.right-section{
+    width:68%;
+    position:relative;
+}
+
+.top-tag{
+    position:absolute;
+    top:20px;
+    right:30px;
+    font-size:12px;
+    color:#666;
+    z-index:2;
+}
+
+.gradient-panel{
+    position:relative;
+    width:100%;
+    height:100%;
+    overflow:hidden;
+
+    background:
+    linear-gradient(
+        90deg,
+        #79f3e6 0%,
+        #b6f28f 10%,
+        #f8e76a 25%,
+        #f7c87f 45%,
+        #f6c3cf 65%,
+        #d6c7f5 80%,
+        #b8f7df 100%
+    );
+}
+
+
+.gradient-panel::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:
+    repeating-linear-gradient(
+        90deg,
+        rgba(255,255,255,.25) 0px,
+        rgba(255,255,255,.25) 4px,
+        transparent 4px,
+        transparent 18px
+    );
+}
+
+
+.card{
+    position:relative;
+    z-index:2;
+    width:250px;
+    height:250px;
+    background:white;
+    border-radius:50%;
+    text-align:center;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    margin-left:80px;
+}
+
+.card h2{
+    font-size:52px;
+    font-weight:400;
+    color:#333;
+}
+
+.card span{
+    font-size:12px;
+    color:#666;
+    margin-bottom:10px;
+}
+
+.card p{
+    width:70%;
+    font-size:12px;
+    color:#666;
+    line-height:1.5;
+}
+
+.card:nth-child(1){
+    margin-top:110px;
+}
+
+.card:nth-child(2){
+    margin-top:40px;
+}
+
+.card:nth-child(3){
+    margin-top:40px;
+}
+
+
+.shape{
+    position:absolute;
+    border-radius:50%;
+}
+
+.yellow{
+    width:240px;
+    height:240px;
+    background:#ffbf1f;
+    top:60px;
+    right:-80px;
+}
+
+.purple{
+    width:180px;
+    height:180px;
+    background:#d3b7ff;
+    top:470px;
+    right:-50px;
+}
+
+.green{
+    width:260px;
+    height:260px;
+    background:#00e58a;
+    bottom:80px;
+    right:-90px;
+}
